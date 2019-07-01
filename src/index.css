@@ -1,8 +1,23 @@
-body {
+* {
     margin: 0;
-    font-family: sans-serif;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    font-size: 1.6rem;
+    color: #444444;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+    font-family: 'Norican', cursive;
 }
   
 code {

@@ -1,0 +1,44 @@
+.Header {
+    position: relative;
+    height: 100vh;
+}
+
+.Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    height: 100%;
+    background-image: url("../../Assets/Images/splash_red.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 140%;
+    width: 120rem;
+    background-image: url("../../Assets/Images/title-splash.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.Title div {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    text-align: center;
+}
+
+.Title h1 {
+    color: #ffffff;
+    font-size: 10rem;
+}
+
+.Title h2 {
+    color: #ffffff;
+    font-size: 6rem;
+}
