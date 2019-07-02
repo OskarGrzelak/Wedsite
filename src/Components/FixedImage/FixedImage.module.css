@@ -1,0 +1,12 @@
+.FixedImage {
+    background-image: url('../../Assets/Images/asia-oski.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: -1;
+}

@@ -1,6 +1,7 @@
 .Header {
     position: relative;
     height: 100vh;
+    background-color: #ffffff;
 }
 
 .Menu {
@@ -18,8 +19,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 140%;
-    width: 120rem;
+    height: 120vh;
+    width: 100rem;
     background-image: url("../../Assets/Images/title-splash.png");
     background-size: contain;
     background-position: right;
@@ -29,7 +30,7 @@
 .Title div {
     position: absolute;
     top: 30%;
-    right: 15%;
+    right: 10%;
     text-align: center;
 }
 
