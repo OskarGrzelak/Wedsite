@@ -1,0 +1,34 @@
+.Info {
+    padding: 20rem 10rem;
+    background-color: #ffffff;
+}
+
+.Info div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E3C1F9;
+    padding: 0 10rem;
+    border-radius: 3rem;
+    height: 6rem;
+}
+
+.Info div:not(:last-of-type) {
+    margin-bottom: 10rem;
+}
+
+.Info div p {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.Info div p:first-of-type {
+    transform: translateY(-3rem);
+}
+
+.Info div p:last-of-type {
+    transform: translateY(3rem);
+}
+
+.Info div p span {
+    display: block;
+}
