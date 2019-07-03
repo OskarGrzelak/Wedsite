@@ -5,7 +5,6 @@ import FixedImage from './Components/FixedImage/FixedImage';
 import Frame from './Components/Frame/Frame';
 import Info from './Components/Info/Info';
 import ClickToAction from './Components/ClickToAction/ClickToAction';
-import image from './Assets/Images/splash_reverse.png';
 
 function App() {
     return (

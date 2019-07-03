@@ -1,0 +1,50 @@
+.CTA {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.CTA img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+.CTA figcaption {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.CTA h3 {
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.CTA h3 span {
+    display: block;
+}
+
+.CTA p {
+    font-size: 4rem;
+}
+
+.CTA button {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 5.5rem;
+    font-family: inherit;
+    padding: 5rem 12rem;
+    background-image: url("../../Assets/Images/button_green.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+}
