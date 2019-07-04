@@ -5,7 +5,7 @@ const header = () => {
 
     return (
         <div className={styles.Header}>
-            <div className={styles.Menu}>MENU</div>
+            <div className={styles.Menu} />
             <div className={styles.Title}>
                 <div>
                     <h1>Asia & Oskar</h1>

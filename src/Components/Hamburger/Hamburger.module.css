@@ -1,0 +1,56 @@
+.Hamburger {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: 5rem;
+    left: 5rem;
+    z-index: 100;
+}
+
+.Hamburger div {
+    display: inline-block;
+    margin-top: 3rem;
+    height: .5rem;
+    width: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    position: relative;
+    transition: all .2s;
+}
+
+.Hamburger div::before,
+.Hamburger div::after {
+    content: '';
+    display: inline-block;
+    left: 0;
+    height: .5rem;
+    width: 6rem;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    position: absolute;
+    transition: top .2s .2s, transform .2s;
+}
+
+.Hamburger div::before {
+    top: -1.5rem;
+}
+
+.Hamburger div::after {
+    top: 1.5rem;
+}
+
+.Clicked div {
+    background-color: transparent;
+}
+
+.Clicked div::before {
+    top: 0;
+    transform: rotate(135deg);
+    transition: top .2s, transform .2s .2s;
+}
+
+.Clicked div::after {
+    top: 0;
+    transform: rotate(-135deg);
+    transition: top .2s, transform .2s .2s;
+}
