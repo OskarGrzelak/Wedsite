@@ -5,6 +5,9 @@ import FixedImage from './Components/FixedImage/FixedImage';
 import Frame from './Components/Frame/Frame';
 import Info from './Components/Info/Info';
 import ClickToAction from './Components/ClickToAction/ClickToAction';
+import Schedule from './Components/Schedule/Schedule';
+import Features from './Components/Features/Features';
+import Form from './Components/Form/Form';
 
 function App() {
     return (
@@ -14,6 +17,9 @@ function App() {
             <Frame />
             <Info />
             <ClickToAction />
+            <Schedule />
+            <Features />
+            <Form />
         </Layout>
     );
 }
