@@ -30,7 +30,7 @@ class App extends Component {
             <Schedule />
             <Features />
             <Form />
-            <FAQ />
+            {/* <FAQ /> */}
         </Layout>
     );
 }
