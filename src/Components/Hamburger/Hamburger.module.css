@@ -4,17 +4,23 @@
     height: 6rem;
     top: 5rem;
     left: 5rem;
-    z-index: 100;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    z-index: 20;
+    cursor: pointer;
+    transition: transform .2s;
 }
 
 .Hamburger div {
     display: inline-block;
-    margin-top: 3rem;
-    height: .5rem;
-    width: 6rem;
-    background-color: #FFFFFF;
+    height: 1px;
+    width: 4rem;
+    background-color: #ff8080;
     border-radius: 3rem;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all .2s;
 }
 
@@ -23,34 +29,42 @@
     content: '';
     display: inline-block;
     left: 0;
-    height: .5rem;
-    width: 6rem;
-    background-color: #FFFFFF;
+    height: 1px;
+    width: 4rem;
+    background-color: #ff8080;
     border-radius: 3rem;
     position: absolute;
     transition: top .2s .2s, transform .2s;
 }
 
 .Hamburger div::before {
-    top: -1.5rem;
+    top: -1rem;
 }
 
 .Hamburger div::after {
-    top: 1.5rem;
+    top: 1rem;
 }
 
-.Clicked div {
+.Hamburger--clicked {
+    position: fixed;
+}
+
+.Hamburger--clicked div {
     background-color: transparent;
 }
 
-.Clicked div::before {
+.Hamburger--clicked div::before {
     top: 0;
     transform: rotate(135deg);
     transition: top .2s, transform .2s .2s;
 }
 
-.Clicked div::after {
+.Hamburger--clicked div::after {
     top: 0;
     transform: rotate(-135deg);
     transition: top .2s, transform .2s .2s;
+}
+
+.Hamburger:hover {
+    transform: rotate(180deg);
 }
