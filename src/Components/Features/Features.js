@@ -8,19 +8,19 @@ const features = () => (
     <div className={styles.Features}>
         <div className={styles.Feature}>
             <div>
-                <object type="image/svg+xml" data={flower} />
+                <object type="image/svg+xml" data={flower} title="flower" />
             </div>
             <p>Drodzy goście, będzie nam bardzo miło, jeżeli zamiast kwiatami obdarujecie nas zdrapką Lotto (może los się do nas uśmiechnie!)</p>
         </div>
         <div className={styles.Feature}>
             <div>
-                <object type="image/svg+xml" data={gift} />
+                <object type="image/svg+xml" data={gift} title="gift" />
             </div>
             <p>Jeśli zaś macie życzenie nas obdarować prezentem prosimy w ich miejsce o gotówkę, która pomoże zrealizować nam nasze marzenia.</p>
         </div>
         <div className={styles.Feature}>
             <div>
-                <object type="image/svg+xml" data={bow} />
+                <object type="image/svg+xml" data={bow} title="bow" />
             </div>
             <p>A gdybyście zastanawiali się, jaki na naszej zabawie obowiązuje dress code, wybierzcie stroje, w któryc będziecie czuli się swobodnie i najlepiej skorzystacie z zabawy.</p>
         </div>
