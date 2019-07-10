@@ -12,7 +12,7 @@ const menu = (props) => {
                     <li>Plan działania</li>
                     <li>Prezenty i dress code</li>
                     <li>Potwierdź udział</li>
-                    <li>FAQ</li>
+                    <li onClick={props.openFAQ}>FAQ</li>
                 </ul>
             </nav>
         </div>

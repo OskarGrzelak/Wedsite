@@ -1,25 +1,13 @@
 import React from 'react';
+import Result from './Result/Result';
 import styles from './Results.module.css';
 
 const results = (props) => {
+    let list = null;
+    if (props.data) list = props.data.map((result, index) => <Result title={result.title} answer={result.answer} key={index} />)
     return (
         <div className={styles.Results}>
-            <div>
-                <h3>Jakieś pytanie, które mam do Was</h3>
-                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>
-            </div>
-            <div>
-                <h3>Jakieś pytanie, które mam do Was</h3>
-                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>
-            </div>
-            <div>
-                <h3>Jakieś pytanie, które mam do Was</h3>
-                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>
-            </div>
-            <div>
-                <h3>Jakieś pytanie, które mam do Was</h3>
-                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>
-            </div>
+            {list}
         </div>
     )
 }

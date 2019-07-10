@@ -14,13 +14,15 @@ import Form from './Components/Form/Form';
 import FAQ from './Components/FAQ/FAQ';
 
 class App extends Component {
-    state = { menu: false, arrow: true };
+    state = { menu: false, faq: false, arrow: true };
     menuToggler = () => this.setState({menu: !this.state.menu});
+    openFAQ = () => this.setState({faq: true});
+    closeFAQ = () => this.setState({faq: false});
     render() {
     return (
         <Layout>
             <Hamburger clicked={this.menuToggler} menu={this.state.menu} />
-            <Menu menu={this.state.menu} />
+            <Menu menu={this.state.menu} openFAQ={this.openFAQ} />
             <UpArrow arrow={this.state.arrow} />
             <FixedImage />
             <Header />
@@ -30,7 +32,7 @@ class App extends Component {
             <Schedule />
             <Features />
             <Form />
-            {/* <FAQ /> */}
+            <FAQ faq={this.state.faq} closeFAQ={this.closeFAQ} />
         </Layout>
     );
 }
