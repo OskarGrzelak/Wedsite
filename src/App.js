@@ -15,27 +15,34 @@ import FAQ from './Components/FAQ/FAQ';
 
 class App extends Component {
     state = { menu: false, faq: false, arrow: true };
+    scheduleRef = React.createRef();
     menuToggler = () => this.setState({menu: !this.state.menu});
     openFAQ = () => this.setState({faq: true});
     closeFAQ = () => this.setState({faq: false});
+    scrollTo = (id, delay) => {
+        const position = document.getElementById(id).offsetTop;
+        this.setState({menu: false});
+        setTimeout(() => this.scroll(position), delay);
+    }
+    scroll = (position) => window.scrollTo({top: position, behavior: 'smooth'})
     render() {
-    return (
-        <Layout>
-            <Hamburger clicked={this.menuToggler} menu={this.state.menu} />
-            <Menu menu={this.state.menu} openFAQ={this.openFAQ} />
-            <UpArrow arrow={this.state.arrow} />
-            <FixedImage />
-            <Header />
-            <Frame />
-            <Info />
-            <ClickToAction />
-            <Schedule />
-            <Features />
-            <Form />
-            <FAQ faq={this.state.faq} closeFAQ={this.closeFAQ} />
-        </Layout>
-    );
-}
+        return (
+            <Layout>
+                <Hamburger clicked={this.menuToggler} menu={this.state.menu} />
+                <Menu menu={this.state.menu} openFAQ={this.openFAQ} scrollTo={this.scrollTo} />
+                <UpArrow arrow={this.state.arrow} scrollTo={this.scrollTo} />
+                <FixedImage />
+                <Header />
+                <Frame />
+                <Info />
+                <ClickToAction scrollTo={this.scrollTo} />
+                <Schedule />
+                <Features />
+                <Form />
+                <FAQ faq={this.state.faq} closeFAQ={this.closeFAQ} />
+            </Layout>
+        );
+    }
 }
 
 export default App;

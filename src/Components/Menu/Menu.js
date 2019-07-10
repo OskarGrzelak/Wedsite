@@ -8,10 +8,10 @@ const menu = (props) => {
             <div className={props.menu ? [styles['Menu__background'], styles['Menu__background--opened']].join(' ') : styles['Menu__background']} />
             <nav className={props.menu ? [styles['Menu__nav'], styles['Menu__nav--opened']].join(' ') : styles['Menu__nav']}>
                 <ul>
-                    <li>Kiedy i gdzie?</li>
-                    <li>Plan działania</li>
-                    <li>Prezenty i dress code</li>
-                    <li>Potwierdź udział</li>
+                    <li onClick={() => props.scrollTo('info', 800)}>Kiedy i gdzie?</li>
+                    <li onClick={() => props.scrollTo('schedule', 800)}>Plan działania</li>
+                    <li onClick={() => props.scrollTo('features', 800)}>Prezenty i dress code</li>
+                    <li onClick={() => props.scrollTo('form', 800)}>Potwierdź udział</li>
                     <li onClick={props.openFAQ}>FAQ</li>
                 </ul>
             </nav>

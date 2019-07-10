@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Info.module.css';
 
 const info = () => (
-    <div className={styles.Info}>
+    <div className={styles.Info} id="info">
         <div>
             <p>Co się dzieje?</p>
             <p>Asia i Oskar pobierają się</p>

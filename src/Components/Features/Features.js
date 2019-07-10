@@ -5,7 +5,7 @@ import gift from '../../Assets/Images/gift-box.svg';
 import bow from '../../Assets/Images/wedding-bow.svg';
 
 const features = () => (
-    <div className={styles.Features}>
+    <div className={styles.Features} id="features">
         <div className={styles.Feature}>
             <div>
                 <object type="image/svg+xml" data={flower} title="flower" />
