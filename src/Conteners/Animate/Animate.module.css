@@ -1,0 +1,9 @@
+.Background {
+    background-color: #FFFFFF;
+}
+
+.Container {
+    opacity: 0;
+    transform: translateY(20rem);
+    transition: all .6s cubic-bezier(.68, -.55, .265, 1.55);
+}
