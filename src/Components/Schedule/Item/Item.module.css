@@ -5,12 +5,12 @@
 
 .Item--left {
     border-right: .5rem dotted #FFB340;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .Item--right {
     border-left: .5rem dotted #FFB340;
-    transform: translateX(calc(50% - 4.5px));
+    transform: translateX(calc(100% - 4.5px));
 }
 
 .Item h4 {

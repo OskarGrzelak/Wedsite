@@ -1,4 +1,5 @@
 import React from 'react';
+import Animate from '../../../Conteners/Animate/Animate';
 import styles from './Item.module.css';
 
 const item = (props) => {
@@ -6,12 +7,14 @@ const item = (props) => {
     style.push(styles[`Item--${props.orientation}`]);
     
     return (
-        <div className={style.join(' ')}>
-            <h4>17:00</h4>
-            <p>Ceremonia zaślubin</p>
-            <p>Hotel Junior</p>
-            <p>ul. Skotnicka 272, Kraków</p>
-        </div>
+        <Animate>
+            <div className={style.join(' ')}>        
+                <h4>17:00</h4>
+                <p>Ceremonia zaślubin</p>
+                <p>Hotel Junior</p>
+                <p>ul. Skotnicka 272, Kraków</p>
+            </div>
+        </Animate>
     );
 }
 
