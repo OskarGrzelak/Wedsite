@@ -7,8 +7,9 @@ class Animate extends Component {
 
     animateElement = () => {
         if (this.animRef.current) {
+            const animationTrigger = this.props.animationTrigger ? this.props.animationTrigger : 200;
             const position = this.animRef.current.getBoundingClientRect().top;
-            if (position <= 200) return {opacity: 1, transform: "translateY(0)"};
+            if (position <= animationTrigger) return {opacity: 1, transform: "translateY(0)"};
         }
         return null;
     }

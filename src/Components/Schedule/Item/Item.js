@@ -7,7 +7,7 @@ const item = (props) => {
     style.push(styles[`Item--${props.orientation}`]);
     
     return (
-        <Animate>
+        <Animate animationTrigger="600">
             <div className={style.join(' ')}>        
                 <h4>17:00</h4>
                 <p>Ceremonia zaślubin</p>
