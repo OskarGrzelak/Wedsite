@@ -1,0 +1,118 @@
+.Screen {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.BtnLeft,
+.BtnRight {
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.BtnLeft:hover ~.Left::before,
+.BtnRight:hover ~.Right::before {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100%;
+    background-image: url(../../Assets/Images/purple_start.png);
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Left::before,
+.Right::before {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.Left div {
+    padding: 0 5rem;
+    background-image: url('../../Assets/Images/blue_start.png');
+    background-size: cover;
+    background-position: right;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Right div {
+    padding: 0 5rem;
+    background-image: url(../../Assets/Images/green_start.png);
+    background-size: cover;
+    background-position: left;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Screen h1 {
+    font-size: 10rem;
+    color: #FFFFFF;
+}
+
+.Screen h2 {
+    font-size: 8rem;
+    color: #FFFFFF;
+}
+
+.Screen h3 {
+    font-size: 12rem;
+    font-weight: 400;
+    line-height: .8;
+    color: #FFFFFF;
+    flex-basis: 0;
+}
