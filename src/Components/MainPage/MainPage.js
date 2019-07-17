@@ -50,27 +50,27 @@ class MainPage extends Component {
         return (
             <Fragment>
                 <Hamburger clicked={this.menuToggler} menu={this.state.menu} />
-                <Menu menu={this.state.menu} openFAQ={this.openFAQ} scrollTo={this.scrollTo} />
+                <Menu menu={this.state.menu} data={this.props.data.menu} openFAQ={this.openFAQ} scrollTo={this.scrollTo} />
                 <UpArrow arrow={this.state.arrow} scrollTo={this.scrollTo} />
                 <FixedImage />
                 <Header data={this.props.data.header} />
                 <Frame />
                 <Animate>
-                    <Info />
+                    <Info data={this.props.data.info} />
                 </Animate>
                 <Animate>
-                    <ClickToAction scrollTo={this.scrollTo} />
+                    <ClickToAction data={this.props.data.cta} scrollTo={this.scrollTo} />
                 </Animate>
                 <Animate>
-                    <Schedule />
+                    <Schedule data={this.props.data.schedule} />
                 </Animate>
                 <Animate>
-                    <Features />
+                    <Features data={this.props.data.features} />
                 </Animate>
                 <Animate>
-                    <Form />
+                    <Form data={this.props.data.form} />
                 </Animate>
-                <FAQ faq={this.state.faq} closeFAQ={this.closeFAQ} />
+                <FAQ faq={this.state.faq} closeFAQ={this.closeFAQ} data={this.props.data.faq} />
             </Fragment>
         )
     }

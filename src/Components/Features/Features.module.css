@@ -4,29 +4,3 @@
     display: flex;
     justify-content: space-around;
 }
-
-.Feature {
-    width: 25%;
-}
-
-.Feature div {
-    background-image: url('../../Assets/Images/brush_blue.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Feature object {
-    width: 60%;
-}
-
-.Feature p {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 2.2rem;
-    line-height: 1.2;
-}

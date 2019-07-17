@@ -6,9 +6,9 @@ const clickToAction = (props) => (
     <figure className={styles.CTA}>
         <img src={image} alt="green splash" />
         <figcaption>
-            <h3><span>Prosimy o potwierdzenie obecności</span><span>do 1 lipca 2020</span></h3>
-            <p>Bardzo liczymy, że będziecie się bawić razem z nami aż do białego rana</p>
-            <button onClick={() => props.scrollTo('form', 0)}>Potwierdzam!</button>
+            <h3>{props.data.header.split('\n').map((el, index) => <span key={index}>{el}</span>)}</h3>
+            <p>{props.data.paragraph}</p>
+            <button onClick={() => props.scrollTo('form', 0)}>{props.data.button}</button>
         </figcaption>
     </figure>
 );

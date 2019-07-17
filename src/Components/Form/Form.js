@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Form.module.css';
 
-const form = () => (
+const form = (props) => (
     <div className={styles.Form} id="form">
-        <h3>Baw się razem z nami!</h3>
-        <p>W celu potwierdzenia obecności skontaktuj się z nami telefonicznie (Asia: +48694221422, Oskar: +48666233973) lub skorzystaj z poniższego formularza</p>
-        <input type="text" placeholder="Imię i nazwisko" />
-        <input type="email" placeholder="Adres e-mail" />
-        <button>Potwierdzam!</button>
+        <h3>{props.data.header}</h3>
+        <p>{props.data.paragraph}</p>
+        <input type="text" placeholder={props.data.namePlaceholder} />
+        <input type="email" placeholder={props.data.emailPlaceholder} />
+        <button>{props.data.button}</button>
     </div>
 );
 

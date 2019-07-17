@@ -9,10 +9,8 @@ const item = (props) => {
     return (
         <Animate animationTrigger="600">
             <div className={style.join(' ')}>        
-                <h4>17:00</h4>
-                <p>Ceremonia zaślubin</p>
-                <p>Hotel Junior</p>
-                <p>ul. Skotnicka 272, Kraków</p>
+                <h4>{props.data.time}</h4>
+                {props.data.paragraphs.map((el, i) => <p key={i}>{el}</p>)}
             </div>
         </Animate>
     );

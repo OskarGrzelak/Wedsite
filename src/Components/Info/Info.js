@@ -1,21 +1,16 @@
 import React from 'react';
+import InfoElement from './InfoElement/InfoElement';
 import styles from './Info.module.css';
 
-const info = () => (
-    <div className={styles.Info} id="info">
-        <div>
-            <p>Co się dzieje?</p>
-            <p>Asia i Oskar pobierają się</p>
+const info = (props) => {
+
+    let list = null;
+    if (props.data) list = props.data.map((el, index) => <InfoElement data={el} key={index} />);
+    return (
+        <div className={styles.Info} id="info">
+            {list}
         </div>
-        <div>
-            <p>Kiedy?</p>
-            <p>12 września 2020</p>
-        </div>
-        <div>
-            <p>Gdzie?</p>
-            <p><span>Hotel Junior,</span><span>ul. Skotnicka 272, Kraków</span></p>
-        </div>
-    </div>
-);
+    );
+}
 
 export default info;
